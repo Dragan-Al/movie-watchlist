@@ -8,6 +8,6 @@ class Movie:
     def __str__(self):
         return (
             f"Title: {self.title}\n"
-            f"Year: {self.year}\n"
+            f"Year: {self.release_year}\n"
             f"Genre: {self.genre}\n"
             f"IMDb: {self.imdb_url}\n")

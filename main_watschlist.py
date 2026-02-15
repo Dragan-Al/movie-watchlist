@@ -10,8 +10,9 @@ if os.path.exists("watchlist.pkl"):
     with open("watchlist.pkl", "rb") as file:
         watchlist = pickle.load(file)
 if(len(watchlist) > 0):
-    print("\nAll books in the watchlist:")
-    for movie in watchlist:
+    print("\nAll movies in the watchlist:\n")
+    for i, movie in enumerate(watchlist, start=1):
+        print(f"{i}.")
         print(movie)
 
 while True:
@@ -39,7 +40,8 @@ while True:
         else:
             print("Movies in your watchlist:\n")
             for i in range(len(watchlist)):
-                print(f"{i+1}. {watchlist[i]}\n")
+                print(f"{i+1}.") 
+                print(f"{watchlist[i]}\n")
 
     elif command == "3":
         break
