@@ -6,4 +6,8 @@ class Movie:
         self.imdb_url = imdb_url
 
     def __str__(self):
-        return f"{self.title}, {self.release_year}, {self.genre}, {self.imdb_url}"
+        return (
+            f"Title: {self.title}\n"
+            f"Year: {self.year}\n"
+            f"Genre: {self.genre}\n"
+            f"IMDb: {self.imdb_url}\n")
